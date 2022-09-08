@@ -23,7 +23,15 @@ function AboutSection(props) {
             <p>
               Skilled at using css styles for indidual elements as well as page
               layout using grids. I also have experience in create animations
-              and using svg's.
+              and using svg's.{" "}
+              <span>
+                <a
+                  href="https://luke-up.github.io/Sketch-Pencils-eStore/index.html"
+                  target="_"
+                >
+                  Example
+                </a>
+              </span>
             </p>
           </div>
           <div className="col-lg-3">
@@ -33,7 +41,15 @@ function AboutSection(props) {
             />
             <p>
               Competent at using the bootstrap library and layout components for
-              responsive website design.
+              responsive website design.{" "}
+              <span>
+                <a
+                  href="https://luke-up.github.io/E-store/index.html"
+                  target="_"
+                >
+                  Example
+                </a>
+              </span>
             </p>
           </div>
           <div className="col-lg-3">
@@ -41,7 +57,15 @@ function AboutSection(props) {
             <p>
               Experience in using javascript syntax, previous projects include
               functions, looping, iterables, objects and arrays, and handling
-              events.
+              events.{" "}
+              <span>
+                <a
+                  href="https://github.com/Luke-up/Minesweeper/blob/main/src/App.js"
+                  target="_"
+                >
+                  Example
+                </a>
+              </span>
             </p>
           </div>
           <div className="col-lg-3">
@@ -62,6 +86,14 @@ function AboutSection(props) {
             <p>
               Have built backend servers in Node to handle API requests as part
               of fullstack web applications.{" "}
+              <span>
+                <a
+                  href="https://github.com/Luke-up/apple-search-server"
+                  target="_"
+                >
+                  Example
+                </a>
+              </span>
             </p>
           </div>
           <div className="col-lg-3">
