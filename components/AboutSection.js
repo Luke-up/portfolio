@@ -1,4 +1,7 @@
 import React, { useEffect } from "react";
+import AboutData from "../about.json";
+import SkillCard from "./SkillCard";
+import AboutList from "./AboutList";
 
 function AboutSection(props) {
   if (props.topic === "skills") {
@@ -8,129 +11,42 @@ function AboutSection(props) {
           <h1>{props.topic}</h1>
         </div>
         <div className="row">
-          <div className="col-lg-3">
-            <img
-              src="/images/html.svg"
-              className="img-thumbnail border-light"
-            />
-            <p>
-              Can compile HTML web pages and competently render HTML elements
-              dynamically from Javascript.
-            </p>
+          <SkillCard details={AboutData.skills.HTML} />
+          <SkillCard details={AboutData.skills.CSS} />
+          <SkillCard details={AboutData.skills.Bootstrap} />
+          <SkillCard details={AboutData.skills.jQuery} />
+          <SkillCard details={AboutData.skills.Node} />
+          <SkillCard details={AboutData.skills.React} />
+          <SkillCard details={AboutData.skills.Express} />
+          <SkillCard details={AboutData.skills.GitHub} />
+          <SkillCard details={AboutData.skills.Postman} />
+          <SkillCard details={AboutData.skills.MongoDB} />
+        </div>
+      </div>
+    );
+  } else if (props.topic === "education") {
+    return (
+      <div>
+        <div className="w-100 text-center mx-auto">
+          <div className="container-fluid border-top border-bottom border-dark border-4 rounded my-3 py-2 text-center">
+            <h1>{props.topic}</h1>
           </div>
-          <div className="col-lg-3">
-            <img src="/images/css.svg" className="img-thumbnail border-light" />
-            <p>
-              Skilled at using css styles for indidual elements as well as page
-              layout using grids. I also have experience in create animations
-              and using svg's.{" "}
-              <span>
-                <a
-                  href="https://luke-up.github.io/Sketch-Pencils-eStore/index.html"
-                  target="_"
-                >
-                  Example
-                </a>
-              </span>
-            </p>
+          <AboutList data={AboutData.about.education.hyperionDev} />
+          <hr />
+          <AboutList data={AboutData.about.education.uct} />
+        </div>
+      </div>
+    );
+  } else if (props.topic === "work") {
+    return (
+      <div>
+        <div className="w-100 text-center mx-auto">
+          <div className="container-fluid border-top border-bottom border-dark border-4 rounded my-3 py-2 text-center">
+            <h1>{props.topic}</h1>
           </div>
-          <div className="col-lg-3">
-            <img
-              src="/images/bootstrap.svg"
-              className="img-thumbnail border-light"
-            />
-            <p>
-              Competent at using the bootstrap library and layout components for
-              responsive website design.{" "}
-              <span>
-                <a
-                  href="https://luke-up.github.io/E-store/index.html"
-                  target="_"
-                >
-                  Example
-                </a>
-              </span>
-            </p>
-          </div>
-          <div className="col-lg-3">
-            <img src="/images/js.svg" className="img-thumbnail border-light" />
-            <p>
-              Experience in using javascript syntax, previous projects include
-              functions, looping, iterables, objects and arrays, and handling
-              events.{" "}
-              <span>
-                <a
-                  href="https://github.com/Luke-up/Minesweeper/blob/main/src/App.js"
-                  target="_"
-                >
-                  Example
-                </a>
-              </span>
-            </p>
-          </div>
-          <div className="col-lg-3">
-            <img
-              src="/images/jquery.svg"
-              className="img-thumbnail border-light"
-            />
-            <p>
-              Implimented the Jquery library to improve efficiency in various
-              javascript projects.
-            </p>
-          </div>
-          <div className="col-lg-3">
-            <img
-              src="/images/node.svg"
-              className="img-thumbnail border-light"
-            />
-            <p>
-              Have built backend servers in Node to handle API requests as part
-              of fullstack web applications.{" "}
-              <span>
-                <a
-                  href="https://github.com/Luke-up/apple-search-server"
-                  target="_"
-                >
-                  Example
-                </a>
-              </span>
-            </p>
-          </div>
-          <div className="col-lg-3">
-            <img
-              src="/images/react.svg"
-              className="img-thumbnail border-light"
-            />
-            <p></p>
-          </div>
-          <div className="col-lg-3">
-            <img
-              src="/images/express.svg"
-              className="img-thumbnail border-light"
-            />
-            <p></p>
-          </div>
-          <div className="col-lg-3">
-            <img
-              src="/images/github.svg"
-              className="img-thumbnail border-light"
-            />
-            <p></p>
-          </div>
-          <div className="col-lg-3">
-            <img
-              src="/images/postman.svg"
-              className="img-thumbnail border-light"
-            />
-            <p></p>
-          </div>
-          <div className="col-lg-3">
-            <img
-              src="/images/mongodb.svg"
-              className="img-thumbnail border-light"
-            />
-            <p></p>
-          </div>
+          <AboutList data={AboutData.about.work.bec} />
+          <hr />
+          <AboutList data={AboutData.about.work.cli} />
         </div>
       </div>
     );
@@ -140,7 +56,7 @@ function AboutSection(props) {
         <div className="container-fluid border-top border-bottom border-dark border-4 rounded my-3 py-2 text-center">
           <h1>{props.topic}</h1>
         </div>
-        <p>{props.content}</p>
+        <p className="text-start fs-5 my-4">{AboutData.about.profile}</p>
       </div>
     );
 }

@@ -1,6 +1,7 @@
 import Navigation from "../components/Navigation";
 import AboutSection from "../components/AboutSection";
 import Sidemenu from "../components/Sidemenu";
+import AboutCard from "../components/AboutCard";
 import React, { useEffect } from "react";
 import AboutData from "../about.json";
 
@@ -11,21 +12,19 @@ function About() {
 
   useEffect(() => {
     if (Topic === "profile") {
-      setContent(AboutData.profile);
-    } else if (Topic === "personal") {
-      setContent(AboutData.personal);
+      setContent(AboutData.about.profile);
     } else if (Topic === "skills") {
-      setContent(AboutData.skills);
+      setContent(AboutData.about.skills);
     } else if (Topic === "education") {
-      setContent(AboutData.education);
+      setContent(AboutData.about.education);
     } else {
-      setContent(AboutData.work);
+      setContent(AboutData.about.work);
     }
   }, [Topic]);
 
   useEffect(() => {
     let newArray = [];
-    Object.keys(AboutData).forEach((key) => {
+    Object.keys(AboutData.about).forEach((key) => {
       newArray.push(key);
     });
     setListItems(newArray);
@@ -38,7 +37,7 @@ function About() {
         <div className="row">
           <div className="col-3"></div>
           <div className="col-6 px-3">
-            <AboutSection topic={Topic} content={content} />
+            <AboutSection topic={Topic} />
           </div>
           <div className="col-3 px-3 text-center">
             <Sidemenu setTopic={setTopic} listItems={listItems} />
@@ -55,21 +54,26 @@ function About() {
             <h1>about</h1>
           </div>
           <div className="row">
-            {listItems.map((section) => {
-              return (
-                <div
-                  key={section}
-                  onClick={() => setTopic(section)}
-                  className="col"
-                >
-                  <div className="card w-75 mx-auto my-3">
-                    <h1>{section}</h1>
-                    <p>Description section</p>
-                    <p>picture</p>
-                  </div>
-                </div>
-              );
-            })}
+            <AboutCard
+              section="profile"
+              img="/images/profile.jpg"
+              setTopic={setTopic}
+            />
+            <AboutCard
+              section="skills"
+              img="/images/skills.jpg"
+              setTopic={setTopic}
+            />
+            <AboutCard
+              section="education"
+              img="/images/education.jpg"
+              setTopic={setTopic}
+            />
+            <AboutCard
+              section="work"
+              img="/images/work.jpg"
+              setTopic={setTopic}
+            />
           </div>
         </div>
       </div>
