@@ -1,5 +1,7 @@
 import Link from "next/link";
 
+//navigation bar with links to home, about and project list page
+//navbar is always at the top of each page
 function Navigation() {
   return (
     <div className="container-fluid bg-dark text-white p-3 my-1 sticky-top">
@@ -20,7 +22,7 @@ function Navigation() {
           </Link>
         </div>
         <div className="col text-center fs-3">
-          <a>Name header</a>
+          <h1>Luke Paine</h1>
         </div>
       </div>
     </div>

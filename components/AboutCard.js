@@ -1,4 +1,6 @@
 import Image from "next/image";
+
+//function renders a small card on the about.js page
 function AboutCard(props) {
   return (
     <div className="col" onClick={() => props.setTopic(props.section)}>

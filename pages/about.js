@@ -5,23 +5,13 @@ import AboutCard from "../components/AboutCard";
 import React, { useEffect } from "react";
 import AboutData from "../about.json";
 
+//function renders the about page when selected in navbar
+//function conditionally renders a selection menu on first load
 function About() {
   const [Topic, setTopic] = React.useState("");
-  const [content, setContent] = React.useState("");
   const [listItems, setListItems] = React.useState([]);
 
-  useEffect(() => {
-    if (Topic === "profile") {
-      setContent(AboutData.about.profile);
-    } else if (Topic === "skills") {
-      setContent(AboutData.about.skills);
-    } else if (Topic === "education") {
-      setContent(AboutData.about.education);
-    } else {
-      setContent(AboutData.about.work);
-    }
-  }, [Topic]);
-
+  //function creates an array of option links
   useEffect(() => {
     let newArray = [];
     Object.keys(AboutData.about).forEach((key) => {
@@ -30,6 +20,7 @@ function About() {
     setListItems(newArray);
   }, []);
 
+  //renders a layout when topic is selected
   if (Topic) {
     return (
       <div>
@@ -45,7 +36,9 @@ function About() {
         </div>
       </div>
     );
-  } else {
+  }
+  //render a selection menu before topic is selected
+  else {
     return (
       <div>
         <Navigation />

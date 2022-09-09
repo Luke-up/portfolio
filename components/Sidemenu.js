@@ -1,5 +1,6 @@
-import React, { useEffect } from "react";
+import React from "react";
 
+//function renders a menu on the right side of screen for quick navigation on the about.js page
 function Sidemenu(props) {
   return (
     <div className="potition-absolute">

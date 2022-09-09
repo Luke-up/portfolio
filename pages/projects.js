@@ -1,6 +1,9 @@
 import Navigation from "../components/Navigation";
-import React, { useEffect } from "react";
+import React from "react";
 
+//function renders the 'projects,js' page
+//values are hardcoded
+//renders links in the center of the page with images and a small description
 function Project() {
   return (
     <div>

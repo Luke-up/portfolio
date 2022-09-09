@@ -1,3 +1,4 @@
+//this component is used in AboutSection to render content in the center of the screen
 function AboutList(props) {
   return (
     <div>

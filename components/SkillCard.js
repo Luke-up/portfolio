@@ -1,5 +1,5 @@
+//this component is used to render cards on the about/skills page
 function SkillCard(props) {
-  console.log(props.details.img);
   return (
     <div className="col-lg-3">
       <span>
