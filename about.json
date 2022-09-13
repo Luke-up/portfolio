@@ -110,5 +110,35 @@
       "skill": "MongoDB",
       "description": "Using MongoDB for fullstack web application developement."
     }
+  },
+  "projects": {
+    "reactGame": {
+      "title": "React game",
+      "description": "This project is a version of Minesweeper that I built using create-react-app. It has a simple start/settings screen and a game screen.",
+      "appLink": "https://look-minesweeper.herokuapp.com/",
+      "codeLink": "https://github.com/Luke-up/Minesweeper",
+      "img": "/images/minesweeper.jpg"
+    },
+    "webApp": {
+      "title": "Itunes-search web app",
+      "description": "This application is a react website using the publically available Itunes-search API, it has various categories of media which can be selected, further search perameters can be defined     according to media.",
+      "appLink": "https://itunes-searching.herokuapp.com/",
+      "codeLink": "https://github.com/Luke-up/itunes-search",
+      "img": "/images/itunesApp.jpg"
+    },
+    "bakery": {
+      "title": "Online bakery",
+      "description": "This website serves as an e-commerce plaform selling cakes. The design elements follow the bakery theme and the Navbar is based on oven controls. It has a simple layout of catalogue, contact,about and shopping cart pages. Javascript provides functionality for the cart.",
+      "appLink": "https://luke-up.github.io/E-store/index.html",
+      "codeLink": "https://github.com/Luke-up/E-store",
+      "img": "/images/royalPetal.jpg"
+    },
+    "colour": {
+      "title": "Colour store",
+      "description": "This website was designed around the concept of a shop that only sells pencils and a pen. The design elements reflect the subject matter as well as showcasing usage of css, bootstrap and svg's inside the HTML.",
+      "appLink": "https://luke-up.github.io/Sketch-Pencils-eStore/",
+      "codeLink": "https://github.com/Luke-up/Sketch-Pencils-eStore",
+      "img": "/images/sketch.jpg"
+    }
   }
 }
