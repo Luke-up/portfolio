@@ -2,6 +2,7 @@ import Navigation from "../components/Navigation";
 import React from "react";
 import ProjectCard from "../components/ProjectCard";
 import AboutList from "../about.json";
+import Head from "next/head";
 
 //function renders the projects page
 //renders a heading with two rows containing projects

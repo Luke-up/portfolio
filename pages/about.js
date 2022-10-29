@@ -3,6 +3,7 @@ import AboutSection from "../components/AboutSection";
 import Sidemenu from "../components/Sidemenu";
 import AboutCard from "../components/AboutCard";
 import React, { useEffect } from "react";
+import Head from "next/head";
 
 //function renders the about page when selected in navbar
 //function conditionally renders a selection menu on first load
