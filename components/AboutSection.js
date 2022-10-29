@@ -14,7 +14,9 @@ function AboutSection(props) {
       <div className="w-100 text-center mx-auto">
         <div className="row">
           {AboutData.about.skills.map((skill) => {
-            return <SkillCard details={skill} />;
+            const d = new Date();
+            let time = d.getTime();
+            return <SkillCard key={time} details={skill} />;
           })}
         </div>
       </div>
@@ -27,7 +29,9 @@ function AboutSection(props) {
       <div>
         <div className="w-100 text-center mx-auto fs-5">
           {AboutData.about.education.map((edu) => {
-            return <AboutList data={edu} />;
+            const d = new Date();
+            let time = d.getTime();
+            return <AboutList key={time} data={edu} />;
           })}
         </div>
       </div>
@@ -40,7 +44,9 @@ function AboutSection(props) {
       <div>
         <div className="w-100 text-center mx-auto fs-5">
           {AboutData.about.work.map((job) => {
-            return <AboutList data={job} />;
+            const d = new Date();
+            let time = d.getTime();
+            return <AboutList key={time} data={job} />;
           })}
         </div>
       </div>
@@ -52,7 +58,13 @@ function AboutSection(props) {
     return (
       <div className="w-100 text-center mx-auto">
         {AboutData.about.profile.map((paragraph) => {
-          return <p className="text-start fs-5 my-4">{paragraph}</p>;
+          const d = new Date();
+          let time = d.getTime();
+          return (
+            <p key={time} className="text-start fs-5 my-4">
+              {paragraph}
+            </p>
+          );
         })}
         <p className="text-start fs-5 my-5">
           Email: <a href="mailto:painelukeb@gmail.com">painelukeb@gmail.com</a>
