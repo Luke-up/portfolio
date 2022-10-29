@@ -1,29 +1,57 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 //function renders a menu on the right side of screen for quick navigation on the about.js page
 function Sidemenu(props) {
+  function setTopic(section) {
+    props.setTopic(section);
+  }
+
   return (
     <div className="potition-absolute">
-      <div className="container-fluid rounded my-3 py-2 text-center">
+      <div>
         <a
           onClick={() => {
-            props.setTopic("");
+            setTopic("profile");
           }}
+          className="w-75 font-hand my-3 fs-3 text-decoration-none text-black"
         >
-          <h1>About</h1>
+          Profile <br />
+          <img src="/images/profile.png" className="sidemenu-icon" />
         </a>
       </div>
-      {props.listItems.map((section) => {
-        return (
-          <a
-            key={section}
-            onClick={() => props.setTopic(section)}
-            className="w-75 my-3 fs-3 nav-link mx-auto"
-          >
-            {section}
-          </a>
-        );
-      })}
+      <div>
+        <a
+          onClick={() => {
+            setTopic("skills");
+          }}
+          className="w-75 font-hand my-3 fs-3 text-decoration-none text-black"
+        >
+          Skills <br />
+          <img src="/images/skills.png" className="sidemenu-icon" />
+        </a>
+      </div>
+      <div>
+        <a
+          onClick={() => {
+            setTopic("work");
+          }}
+          className="w-75 font-hand my-3 fs-3 text-decoration-none text-black"
+        >
+          Work <br />
+          <img src="/images/work.png" className="sidemenu-icon" />
+        </a>
+      </div>
+      <div>
+        <a
+          onClick={() => {
+            setTopic("education");
+          }}
+          className="w-75 font-hand my-3 fs-3 text-decoration-none text-black bigOnHover"
+        >
+          Education <br />
+          <img src="/images/education.png" className="sidemenu-icon" />
+        </a>
+      </div>
     </div>
   );
 }

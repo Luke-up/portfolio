@@ -1,11 +1,15 @@
 {
   "about": {
-    "profile": " Motivated coder and aspiring web developer. I have a strong background in problem solving and design garnered through years of architectural study. An an individual I embrace the joy of creating a cohesive and detailed execution of an idea. I have also worked as part of a team to design solutions for human problems. Qualities that helped my succeed as a member of a team were sincerely participating in discussions, as well as being a reliable worker. I have also acquired a solid foundation in JavaScript through my programming boot camp and self studies. Previous experience as a teacher has only reinforced my desire and appreciation for continuous education. I am quickly increasing my knowledge base every day as new projects present new challenges. Personally, I enjoy new experiences, situations that require growth and the embrace of change. I recently experienced immersion in a foreign culture and language, which was incredibly satisfying as my understanding increased day by day. I have continued my studies and it still brings joy every day.",
-    "skills": "HTML, CSS, BOOTSTRAP, JAVASCRIPT, JQUERY, REACT, NODE, EXPRESS, MONGODB, MONGOOSE, POSTMAN, GITHUB",
-    "work": {
-      "bec": {
+    "profile": [
+      " Motivated coder and aspiring web developer. I have a strong background in problem solving and design garnered through years of architectural studies. I have always enjoyed taking the time to create a cohesive and detailed final product.",
+      "I have also worked as part of a team to design spaces and to teach teach children. As a team member I pride myself on sincerely participating in discussions and reliably delivering on promises.",
+      "I have also acquired a solid foundation in JavaScript through my programming boot camp and self study. Previous experience as a teacher has only reinforced my desire and appreciation for continuous education. I am quickly increasing my knowledge base every day as new projects present new challenges.",
+      "Personally, I enjoy new experiences, situations that require growth and the embrace of change. I recently experienced immersion in a foreign culture and language, which was incredibly satisfying as my understanding increased day by day. I have continued my studies and they still bring me a great amount of joy."
+    ],
+    "work": [
+      {
         "name": "BEC I-Cubed",
-        "description": "I was a teacher at ICube and EEI, which are subsets of the Bright English Club school. They are separate programs that focus on teaching students (late elementary to Highschool) how to think critically. ",
+        "description": "I was a teacher at ICube and EEI, which are subsets of the Bright English Club school. They are separate programs that focus on teaching students (late elementary to highschool) how to think critically. ",
         "points": [
           "Prepared and delivered lessons on maths and science.",
           "Recorded and edited videos used in advertising.",
@@ -14,7 +18,7 @@
         ],
         "date": "2021/03 ~ 2022/04"
       },
-      "cli": {
+      {
         "name": "California Language Institute",
         "description": "CLI is an after school English program that operates in various locations in Japan. I was employed as a second language instructor. The lessons varied from day to day and the position required a high degree of adaptability. ",
         "points": [
@@ -23,12 +27,13 @@
         ],
         "date": "2019/06 ~ 2021/03"
       }
-    },
-    "education": {
-      "hyperionDev": {
+    ],
+    "education": [
+      {
         "name": "Hyperion Dev",
-        "description": "Hyperion Dev one of the largest coding bootcamps in South Africa. I am currently completing an intensive 6 month web development course. The course outlines an extensive array of practical tasks based on different elements of the MERN stack. Each lesson provides an opportunity to code a real life example of a fundamental programming concept. The tasks are evaluated by industry professionals before it is possible to complete the next, so that the knowledge base has strong foundations. I have developed various front and backend skills using HTML, CSS and JavaScript as well as other frameworks and libraries. Tasks include: ",
+        "description": "Hyperion Dev is one of the largest coding bootcamps in South Africa. I am currently completing an intensive 6 month web development course. The course outlines an extensive array of practical tasks based on different elements of the MERN stack. Each lesson provides an opportunity to code a real life example of a fundamental programming concept. The tasks are evaluated by industry professionals before it is possible to complete the next, so that the knowledge base has strong foundations. I have developed various front and backend skills using HTML, CSS and JavaScript as well as other frameworks and libraries. Tasks include: ",
         "points": [
+          "Building a comprehensive homework logging application in Next.js, using Javascript and XML",
           "Building an Ecommerce site using HTML, CSS, with bootstrap and basic functionality with Javascript sessionStorage.",
           "Building a minesweeper clone using React, XML, Git for version control and deploying it using Heroku.",
           "Building a Itunes-search app using React, Node,js, Express, Git for version control and deploying it using Heroku."
@@ -36,109 +41,118 @@
         "date": "2022/05 ~ 2022/11",
         "link": "https://www.hyperiondev.com/"
       },
-      "uct": {
+      {
         "name": "University of Cape Town",
         "description": "I completed a bachelors in architectural studies at the school of engineering and the built environment. The BAS course at UCT is a full time course focused on all the facets of Architecture, namely Design and Building construction, but also covering an in depth study of history and theory of architecture, theory of structures (building physics) and Environment studies. During my studies I developed skills in presentation and design, critical thinking and working to a deadline.",
         "points": [
           "Collaberation in design teams.",
-          "Solving problems in a variety of contexts.",
+          "Researching and designing an affordable housing scheme in Disctrict 6.",
+          "Designing a community center to provide work for people without homes.",
           "Presenting plans to a client."
         ],
         "date": "2015/02 ~ 2018/04",
         "link": "http://www.apg.uct.ac.za/"
       }
-    }
+    ],
+    "skills": [
+      {
+        "img": "/images/html.svg",
+        "skill": "HTML",
+        "description": "Can compile HTML web pages and competently render HTML elements dynamically from Javascript."
+      },
+      {
+        "img": "/images/css.svg",
+        "skill": "CSS",
+        "description": "Skilled at using css styles for elements and layouts. Experience in create animations and using svg's."
+      },
+      {
+        "img": "/images/bootstrap.svg",
+        "skill": "Bootstrap",
+        "description": "Competent at using the bootstrap library and layout components for responsive website design.",
+        "link": "https://luke-up.github.io/E-store/index.html"
+      },
+      {
+        "img": "/images/js.svg",
+        "skill": "Javascript",
+        "description": "Experience in using javascript syntax, previous projects include functions, looping iterables, objects and arrays, and handling events.",
+        "link": "https://github.com/Luke-up/Minesweeper/blob/main/src/App.js"
+      },
+      {
+        "img": "/images/jquery.svg",
+        "skill": "jQuery",
+        "description": "Implimented the Jquery library to improve efficiency in various javascript projects."
+      },
+      {
+        "img": "/images/node.svg",
+        "skill": "Node",
+        "description": "Have built backend servers in Node to handle API requests as part of fullstack web applications.",
+        "link": "https://github.com/Luke-up/apple-search-server"
+      },
+      {
+        "img": "/images/react.svg",
+        "skill": "React",
+        "description": "Competent at creating and testing react components as well as deploying react apps to Heroku.",
+        "link": "https://look-minesweeper.herokuapp.com/"
+      },
+      {
+        "img": "/images/express.svg",
+        "skill": "Express",
+        "description": "Using the express framework to create the backend to handle CRUD operations."
+      },
+      {
+        "img": "/images/github.svg",
+        "skill": "GitHub",
+        "description": "GitHub for version control, hosting websites through GitHub pages and using heroku for deployment.",
+        "link": "https://github.com/Luke-up"
+      },
+      {
+        "img": "/images/postman.svg",
+        "skill": "Postman",
+        "description": "Using Postman to test API's."
+      },
+      {
+        "img": "/images/mongodb.svg",
+        "skill": "MongoDB",
+        "description": "Using MongoDB for fullstack web application developement."
+      }
+    ]
   },
-  "skills": {
-    "HTML": {
-      "img": "/images/html.svg",
-      "skill": "HTML",
-      "description": "Can compile HTML web pages and competently render HTML elements dynamically from Javascript."
+
+  "projects": [
+    {
+      "title": "Homework logging and communication app",
+      "description": "This project is a platform on which teachers can create virtual classrooms for students. Teachers can create rooms, add students, create and mark tasks. The app is currently deployed on vercel and uses MongoDB to store the data.",
+      "appLink": "https://homework-app.vercel.app/",
+      "codeLink": "https://github.com/Luke-up/homework-app",
+      "img": "/images/homeworkApp.jpg"
     },
-    "CSS": {
-      "img": "/images/css.svg",
-      "skill": "CSS",
-      "description": "Skilled at using css styles for elements and layouts. Experience in create animations and using svg's."
-    },
-    "Bootstrap": {
-      "img": "/images/bootstrap.svg",
-      "skill": "Bootstrap",
-      "description": "Competent at using the bootstrap library and layout components for responsive website design.",
-      "link": "https://luke-up.github.io/E-store/index.html"
-    },
-    "Javascript": {
-      "img": "/images/js.svg",
-      "skill": "Javascript",
-      "description": "Experience in using javascript syntax, previous projects include functions, looping iterables, objects and arrays, and handling events.",
-      "link": "https://github.com/Luke-up/Minesweeper/blob/main/src/App.js"
-    },
-    "jQuery": {
-      "img": "/images/jquery.svg",
-      "skill": "jQuery",
-      "description": "Implimented the Jquery library to improve efficiency in various javascript projects."
-    },
-    "Node": {
-      "img": "/images/node.svg",
-      "skill": "Node",
-      "description": "Have built backend servers in Node to handle API requests as part of fullstack web applications.",
-      "link": "https://github.com/Luke-up/apple-search-server"
-    },
-    "React": {
-      "img": "/images/react.svg",
-      "skill": "React",
-      "description": "Competent at creating and testing react components as well as deploying react apps to Heroku.",
-      "link": "https://look-minesweeper.herokuapp.com/"
-    },
-    "Express": {
-      "img": "/images/express.svg",
-      "skill": "Express",
-      "description": "Using the express framework to create the backend to handle CRUD operations."
-    },
-    "GitHub": {
-      "img": "/images/github.svg",
-      "skill": "GitHub",
-      "description": "GitHub for version control, hosting websites through GitHub pages and using heroku for deployment.",
-      "link": "https://github.com/Luke-up"
-    },
-    "Postman": {
-      "img": "/images/postman.svg",
-      "skill": "Postman",
-      "description": "Using Postman to test API's."
-    },
-    "MongoDB": {
-      "img": "/images/mongodb.svg",
-      "skill": "MongoDB",
-      "description": "Using MongoDB for fullstack web application developement."
-    }
-  },
-  "projects": {
-    "reactGame": {
+    {
       "title": "React game",
       "description": "This project is a version of Minesweeper that I built using create-react-app. It has a simple start/settings screen and a game screen.",
       "appLink": "https://look-minesweeper.herokuapp.com/",
       "codeLink": "https://github.com/Luke-up/Minesweeper",
       "img": "/images/minesweeper.jpg"
     },
-    "webApp": {
+    {
       "title": "Itunes-search web app",
       "description": "This application is a react website using the publically available Itunes-search API, it has various categories of media which can be selected, further search perameters can be defined     according to media.",
       "appLink": "https://itunes-searching.herokuapp.com/",
       "codeLink": "https://github.com/Luke-up/itunes-search",
       "img": "/images/itunesApp.jpg"
     },
-    "bakery": {
+    {
       "title": "Online bakery",
       "description": "This website serves as an e-commerce plaform selling cakes. The design elements follow the bakery theme and the Navbar is based on oven controls. It has a simple layout of catalogue, contact,about and shopping cart pages. Javascript provides functionality for the cart.",
       "appLink": "https://luke-up.github.io/E-store/index.html",
       "codeLink": "https://github.com/Luke-up/E-store",
       "img": "/images/royalPetal.jpg"
     },
-    "colour": {
+    {
       "title": "Colour store",
       "description": "This website was designed around the concept of a shop that only sells pencils and a pen. The design elements reflect the subject matter as well as showcasing usage of css, bootstrap and svg's inside the HTML.",
       "appLink": "https://luke-up.github.io/Sketch-Pencils-eStore/",
       "codeLink": "https://github.com/Luke-up/Sketch-Pencils-eStore",
       "img": "/images/sketch.jpg"
     }
-  }
+  ]
 }

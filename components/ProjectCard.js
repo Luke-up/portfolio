@@ -8,16 +8,14 @@ function ProjectCard(props) {
           {props.data.description}
           <br />
           <span>
-            <a href={props.data.appLink} target="_">
-              app
-            </a>
-            {", "}
             <a href={props.data.codeLink} target="_">
               code
             </a>
           </span>
         </p>
-        <img src={props.data.img} />
+        <a href={props.data.appLink} target="_">
+          <img className="app-pictures w-100" src={props.data.img} />
+        </a>
       </div>
     </div>
   );

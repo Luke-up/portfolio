@@ -8,17 +8,26 @@ import AboutList from "../about.json";
 function Project() {
   return (
     <div>
-      <Navigation />
+      <Head>
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-R03BYRJNCK"
+        ></script>
+        <script>
+          window.dataLayer = window.dataLayer || []; function gtag()
+          {dataLayer.push(arguments)}
+          gtag('js', new Date()); gtag('config', 'G-R03BYRJNCK');
+        </script>
+      </Head>
+      <Navigation type="projects" />
       <div className="w-75 text-center mx-auto">
-        <div className="container-fluid border-top border-bottom border-dark border-4 rounded my-3 py-2 text-center">
-          <h1>projects</h1>
+        <div className="container-fluid my-5 py-2 text-center">
+          <h1>Projects:</h1>
         </div>
         <div className="row">
-          <ProjectCard data={AboutList.projects.reactGame} />
-          <ProjectCard data={AboutList.projects.webApp} />
-          <hr className="" />
-          <ProjectCard data={AboutList.projects.bakery} />
-          <ProjectCard data={AboutList.projects.colour} />
+          {AboutList.projects.map((project) => {
+            return <ProjectCard data={project} />;
+          })}
         </div>
       </div>
     </div>

@@ -1,10 +1,70 @@
-h1, h2, h3,  a {
-  font-family:Spectral;
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@300&display=swap');
+
+h1, h2, h3{
+  font-family: 'Averia Serif Libre', cursive;
+
 }
+p {
+
+  font-family: 'Dosis', sans-serif;
+}
+
 a:hover{
   color:rgb(125, 125, 125);
   cursor:pointer;
 }
-p {
-  font-family:Rubrik
+
+.full-screen {
+height: 80vh;
+}
+
+.screen-middle{
+  margin-top:20vh;
+}
+
+.font-hand{
+  font-family: 'Averia Serif Libre', cursive;
+}
+
+.font-normal{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.sidemenu-icon{
+  height: 90px;
+}
+
+:hover.navElement {
+  color:blue;
+  stroke-dasharray: 300;
+  stroke-dashoffset: 300;
+  /*Animation is set to run the dash over the path, causing it to become 'visable'*/
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+  animation-name: write;
+  animation-timing-function: ease;
+}
+@keyframes write {
+  to {
+      stroke-dashoffset: 0;
+  }
+}
+
+:hover.sidemenu-icon{
+  height:100px;
+}
+
+:hover.app-pictures{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+}
+
+:hover.aboutmenu-icon{
+  cursor: pointer;
+  width:110px;
+}
+
+.aboutmenu-icon{
+  width:100px;
 }

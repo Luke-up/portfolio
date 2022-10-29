@@ -1,21 +1,36 @@
 import Navigation from "../components/Navigation";
+import Head from "next/head";
 
 //render homepage landing page
 //simple welcome message, contact options and navigation bar
 export default function Home() {
   return (
     <div>
-      <Navigation />
+      <Head>
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-R03BYRJNCK"
+        ></script>
+        <script>
+          window.dataLayer = window.dataLayer || []; function gtag()
+          {dataLayer.push(arguments)}
+          gtag('js', new Date()); gtag('config', 'G-R03BYRJNCK');
+        </script>
+      </Head>
+      <Navigation type="home" />
       <div className="w-75 text-center mx-auto">
-        <div className="container-fluid rounded my-3 py-2 text-center my-5 ">
-          <h1>
-            ~ portfolio of works
-            <span className="fs-5 font-monospace">
-              <br />
-              Luke Paine
-            </span>
-          </h1>
-          <p className="fs-4 w-50 mx-auto text-start my-5">
+        <div className="container-fluid rounded py-2 text-center ">
+          <div className="full-screen">
+            <h1 className="screen-middle">
+              ~ portfolio of works
+              <span className="fs-5">
+                <br />
+                Luke Paine
+              </span>
+            </h1>
+          </div>
+
+          <p className="fs-4 w-75 mx-auto text-center">
             This website contains various websites and apps that I have made.{" "}
             <br />
             As well as background details, education, experience and information
