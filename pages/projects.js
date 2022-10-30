@@ -27,7 +27,9 @@ function Project() {
         </div>
         <div className="row">
           {AboutList.projects.map((project) => {
-            return <ProjectCard data={project} />;
+            const d = new Date();
+            let time = d.getTime();
+            return <ProjectCard key={time} data={project} />;
           })}
         </div>
       </div>
