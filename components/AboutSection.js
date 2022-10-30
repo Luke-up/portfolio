@@ -10,13 +10,13 @@ function AboutSection(props) {
   //first condition renders the configuration for 'skills'
   //layout uses the skillcard component to display items
   if (props.topic === "skills") {
+    let key = 0;
     return (
       <div className="w-100 text-center mx-auto">
         <div className="row">
           {AboutData.about.skills.map((skill) => {
-            const d = new Date();
-            let time = d.getTime();
-            return <SkillCard key={time} details={skill} />;
+            key++;
+            return <SkillCard key={key} details={skill} />;
           })}
         </div>
       </div>
@@ -25,13 +25,13 @@ function AboutSection(props) {
   //condition renders the 'education' layout
   //layout uses the about list component to render content in the center of the screen
   else if (props.topic === "education") {
+    let key = 100;
     return (
       <div>
         <div className="w-100 text-center mx-auto fs-5">
           {AboutData.about.education.map((edu) => {
-            const d = new Date();
-            let time = d.getTime();
-            return <AboutList key={time} data={edu} />;
+            key++;
+            return <AboutList key={key} data={edu} />;
           })}
         </div>
       </div>
@@ -40,13 +40,13 @@ function AboutSection(props) {
   //condition renders the 'work' layout
   //layout uses the about list component to render content in the center of the screen
   else if (props.topic === "work") {
+    let key = 200;
     return (
       <div>
         <div className="w-100 text-center mx-auto fs-5">
           {AboutData.about.work.map((job) => {
-            const d = new Date();
-            let time = d.getTime();
-            return <AboutList key={time} data={job} />;
+            key++;
+            return <AboutList key={key} data={job} />;
           })}
         </div>
       </div>
@@ -54,14 +54,14 @@ function AboutSection(props) {
   }
   //condition renders the 'profile' layout
   //layout render a heading and single paragraph
-  else
+  else {
+    let key = 300;
     return (
       <div className="w-100 text-center mx-auto">
         {AboutData.about.profile.map((paragraph) => {
-          const d = new Date();
-          let time = d.getTime();
+          key++;
           return (
-            <p key={time} className="text-start fs-5 my-4">
+            <p key={key} className="text-start fs-5 my-4">
               {paragraph}
             </p>
           );
@@ -81,6 +81,7 @@ function AboutSection(props) {
         </p>
       </div>
     );
+  }
 }
 
 export default AboutSection;
