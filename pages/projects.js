@@ -9,7 +9,7 @@ import Head from "next/head";
 function Project() {
   return (
     <div>
-      <Head>
+      {/* <Head>
         <script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-R03BYRJNCK"
@@ -19,7 +19,7 @@ function Project() {
           {dataLayer.push(arguments)}
           gtag('js', new Date()); gtag('config', 'G-R03BYRJNCK');
         </script>
-      </Head>
+      </Head> */}
       <Navigation type="projects" />
       <div className="w-75 text-center mx-auto">
         <div className="container-fluid my-5 py-2 text-center">

@@ -20,17 +20,6 @@ function About() {
   if (Topic) {
     return (
       <div>
-        <Head>
-          <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=G-R03BYRJNCK"
-          ></script>
-          <script>
-            window.dataLayer = window.dataLayer || []; function gtag()
-            {dataLayer.push(arguments)}
-            gtag('js', new Date()); gtag('config', 'G-R03BYRJNCK');
-          </script>
-        </Head>
         <Navigation />
         <div className="row">
           <div className="col-1"></div>

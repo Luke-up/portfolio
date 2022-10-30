@@ -6,17 +6,6 @@ import Head from "next/head";
 export default function Home() {
   return (
     <div>
-      <Head>
-        <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-R03BYRJNCK"
-        ></script>
-        <script>
-          window.dataLayer = window.dataLayer || []; function gtag()
-          {dataLayer.push(arguments)}
-          gtag('js', new Date()); gtag('config', 'G-R03BYRJNCK');
-        </script>
-      </Head>
       <Navigation type="home" />
       <div className="w-75 text-center mx-auto">
         <div className="container-fluid rounded py-2 text-center ">
