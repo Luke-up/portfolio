@@ -12,7 +12,7 @@ function About() {
 
   useEffect(() => {
     if (Topic) {
-      window.scrollTo(0, 0);
+      window.location.reload();
     }
   }, [Topic]);
 
