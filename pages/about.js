@@ -23,12 +23,12 @@ function About() {
         <Navigation />
         <div className="row">
           <div className="col-1"></div>
-          <div className="col-3">
+          <div className="col-12 col-md-3">
             <div className="px-3 mt-1 ms-5 text-center position-fixed">
               <Sidemenu setTopic={setTopic} />
             </div>
           </div>
-          <div className="col-6">
+          <div className="col-12 col-md-6">
             <div className="px-3">
               <AboutSection topic={Topic} />
             </div>
