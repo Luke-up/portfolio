@@ -206,23 +206,6 @@
           "url": "https://github.com/Luke-up/Snap_server"
         }
       ]
-    },
-    {
-      "slug": "construction-company-site",
-      "title": "Company Website",
-      "tagline": "Marketing-focused multi-page website",
-      "cardSummary": "A multi-page Next.js website focused on UX, user journey, and marketing presentation for a construction brand.",
-      "img": "/images/drawing.svg",
-      "images": ["/images/drawing.svg"],
-      "overview": "This project showcases website design for a construction company with a focus on trust, clarity, and conversion-oriented content flow.",
-      "stack": ["Next.js", "React", "Multi-page UX", "Form submission"],
-      "highlights": [
-        "Structured page layouts around user journey goals and marketing communication.",
-        "Designed clear calls-to-action and service presentation for lead generation.",
-        "Implemented lightweight form submission for enquiry capture."
-      ],
-      "appLink": "",
-      "codeLink": ""
     }
   ]
 }
