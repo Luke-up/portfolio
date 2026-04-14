@@ -22,7 +22,7 @@ function Project() {
           <div className="my-3 py-2 text-start">
             <h1>Projects</h1>
             <p className="fs-5 mb-0">
-              Select a project card to view implementation details.
+              Select a project to view details.
             </p>
           </div>
           <div className="row g-3">

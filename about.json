@@ -102,73 +102,118 @@
     {
       "slug": "granadilla",
       "title": "Granadilla",
-      "tagline": "Complex school assignment platform",
-      "cardSummary": "Homework management system for schools, teachers, and students with a role-based backend and modern frontend.",
-      "img": "/images/drawing.svg",
-      "overview": "Granadilla is a full-stack assignment management application with a Django REST backend and a Next.js frontend.",
+      "tagline": "Production-deployed full-stack learning platform",
+      "cardSummary": "Built for schools, teachers, and students with role-based dashboards, homework workflows, and API-driven frontend experiences.",
+      "img": "/images/student_dashboard.png",
+      "images": [
+        "/images/student_dashboard.png",
+        "/images/create_assignment.png",
+        "/images/student_profile.png"
+      ],
+      "overview": "Granadilla is a production-deployed full-stack learning platform for schools, teachers, and students. Built with a Django REST + PostgreSQL backend and a Next.js/React frontend, it supports role-based dashboards, homework authoring, marking workflows, student submissions, and lexicon tracking.",
       "frontend": {
         "title": "Frontend",
-        "summary": "Built as a Next.js application with React state and API-driven UI for day-to-day teacher and student workflows.",
-        "stack": ["Next.js", "React", "REST API", "Responsive design"],
+        "summary": "Built as a Next.js/React application with API-driven UI for teacher and student workflow management.",
+        "stack": ["Next.js", "React", "API-driven UI", "Responsive design"],
         "highlights": [
-          "Used React state and API calls to manipulate assignment, class, and user data from the backend.",
-          "Implemented responsive CRUD operations for tasks, classroom content, and related resources.",
-          "Integrated external image search functionality as part of content workflows."
+          "Implemented role-based dashboards and responsive flows for authoring, submission, and marking tasks.",
+          "Used React state and REST API calls to handle assignment, class, submission, and lexicon data.",
+          "Implemented responsive CRUD operations for tasks, classroom content, and related resources."
         ],
         "appLink": "",
         "codeLink": ""
       },
       "backend": {
         "title": "Backend",
-        "summary": "Django + PostgreSQL backend handling multi-user role flows and secure data access across schools, teachers, and students.",
-        "stack": ["Django", "PostgreSQL", "JWT authentication", "Role permissions"],
+        "summary": "Django REST + PostgreSQL backend managing role access, school-scoped data boundaries, and secure authentication.",
+        "stack": ["Django REST", "PostgreSQL", "JWT authentication", "RBAC", "Multi-tenant boundaries"],
         "highlights": [
-          "Implemented JWT-based authentication for secure session and API access.",
-          "Designed data models and relationships for users, classes, assignments, and permissions.",
+          "Implemented JWT authentication with role-based access control across user types and workflows.",
+          "Designed model relationships for users, schools, classes, assignments, and submissions.",
           "Managed role-based access rules for different user types across core operations."
         ],
         "appLink": "",
         "codeLink": ""
-      }
+      },
+      "highlights": [
+        "Production deployment split across Render (backend) and Vercel (frontend).",
+        "Enforced school-level data boundaries for multi-tenant usage patterns.",
+        "Combined secure auth, API-driven UI, and responsive UX in one integrated platform."
+      ],
+      "stack": ["Django REST", "PostgreSQL", "Next.js", "React", "JWT", "Render", "Vercel"],
+      "appLink": "https://granadilla.vercel.app/",
+      "codeLink": "",
+      "links": [
+        {
+          "label": "Live app",
+          "url": "https://granadilla.vercel.app/"
+        }
+      ]
     },
     {
       "slug": "image-search",
       "title": "Image Search",
-      "tagline": "Reusable search component",
-      "cardSummary": "Standalone image-search component extracted from Granadilla and built as a focused React + Redux project.",
-      "img": "/images/drawing.svg",
-      "overview": "Image Search is a compact project that demonstrates API-driven search UI and structured state management.",
-      "stack": ["React", "Redux", "JavaScript", "External API"],
+      "tagline": "Lightweight React image module",
+      "cardSummary": "A reusable React module for searching and selecting profile images from the Pexels API.",
+      "img": "/images/image_search.jpg",
+      "images": ["/images/image_search.jpg"],
+      "overview": "Image Search is a lightweight React module for searching and selecting profile images from the Pexels API, built to practice scalable frontend patterns.",
+      "stack": ["React", "Redux Toolkit", "JavaScript", "API Integration", "UI State Management"],
       "highlights": [
-        "Built as a reusable image-search module similar to the one used in Granadilla.",
-        "Used Redux for predictable state management and query/result flow.",
-        "Handled API result rendering and user-driven search interactions in a clean component structure."
+        "Designed and implemented a reusable image search component.",
+        "Used Redux to keep interaction flows predictable across search, selection, and modal state transitions."
       ],
-      "appLink": "",
-      "codeLink": ""
+      "appLink": "https://image-search-liard-delta.vercel.app/",
+      "codeLink": "https://github.com/Luke-up/image-search",
+      "links": [
+        {
+          "label": "Live app",
+          "url": "https://image-search-liard-delta.vercel.app/"
+        },
+        {
+          "label": "GitHub repo",
+          "url": "https://github.com/Luke-up/image-search"
+        }
+      ]
     },
     {
       "slug": "card-snap-game",
       "title": "Card Snap Game",
-      "tagline": "Realtime game + chat",
-      "cardSummary": "A card snap game designed to demonstrate realtime chat using websocket communication.",
-      "img": "/images/drawing.svg",
-      "overview": "Card Snap Game combines interactive gameplay with live chat features powered by websocket events.",
-      "stack": ["React", "WebSockets", "Realtime messaging", "Game UI"],
+      "tagline": "Multiplayer realtime game",
+      "cardSummary": "Players create or join rooms, race to call snap, and compete through timed rounds with live scoring and chat.",
+      "img": "/images/snap_game.jpg",
+      "images": ["/images/snap_game.jpg"],
+      "overview": "Snap is a real-time multiplayer card game built as a full-stack experience with React on the frontend and Node.js + Socket.IO on the backend to synchronize game state, player actions, and messaging across connected users.",
+      "stack": ["React", "Socket.IO", "Node.js", "Express", "SCSS"],
       "highlights": [
-        "Implemented realtime chat communication between connected users using websocket events.",
-        "Built gameplay components and interactions for a fast-paced card snap experience.",
-        "Designed and illustrated game assets personally to support a cohesive visual style."
+        "Implemented websocket-driven room management, live chat, and synchronized round and game events.",
+        "Built interactive game UI flows for lobby, countdown, active rounds, and scoring updates.",
+        "Designed custom visual assets and interface styling for a cohesive game feel."
       ],
-      "appLink": "",
-      "codeLink": ""
+      "appLink": "https://snap-app-qsg9.onrender.com/",
+      "codeLink": "",
+      "links": [
+        {
+          "label": "Live app",
+          "url": "https://snap-app-qsg9.onrender.com/"
+        },
+        {
+          "label": "Frontend repo",
+          "url": "https://github.com/Luke-up/Snap_app"
+        },
+        {
+          "label": "Backend repo",
+          "url": "https://github.com/Luke-up/Snap_server"
+        }
+      ]
     },
     {
       "slug": "construction-company-site",
-      "title": "Construction Company Website",
+      "title": "Company Website",
       "tagline": "Marketing-focused multi-page website",
       "cardSummary": "A multi-page Next.js website focused on UX, user journey, and marketing presentation for a construction brand.",
       "img": "/images/drawing.svg",
+      "images": ["/images/drawing.svg"],
       "overview": "This project showcases website design for a construction company with a focus on trust, clarity, and conversion-oriented content flow.",
       "stack": ["Next.js", "React", "Multi-page UX", "Form submission"],
       "highlights": [

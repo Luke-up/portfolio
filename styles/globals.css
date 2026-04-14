@@ -294,6 +294,11 @@ height: 80vh;
   color: white;
 }
 
+.project-tile:hover,
+.project-tile:hover * {
+  color: white !important;
+}
+
 .project-tile-image {
   width: 100%;
   height: 230px;
@@ -315,6 +320,11 @@ height: 80vh;
   justify-content: flex-end;
 }
 
+.project-tile-meta {
+  color: white;
+  font-size: 0.95rem;
+}
+
 .project-tile:hover .project-tile-overlay {
   background: linear-gradient(
     180deg,
@@ -325,6 +335,46 @@ height: 80vh;
 
 .project-detail-block {
   margin-top: 1.25rem;
+}
+
+.project-links-inline {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  margin-top: 0.6rem;
+}
+
+.project-detail-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 330px;
+  gap: 2rem;
+  align-items: start;
+}
+
+.project-detail-gallery {
+  position: static;
+}
+
+.project-detail-image {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  margin-bottom: 1rem;
+  border-radius: 0;
+  overflow: hidden;
+  padding: 0.25rem;
+  background: white;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
+}
+
+@media (max-width: 1200px) {
+  .project-detail-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .project-detail-gallery {
+    display: none;
+  }
 }
 
 .work-company-row,
@@ -354,6 +404,11 @@ height: 80vh;
   .page-content {
     margin-left: 0;
     padding: 1.5rem 1rem 2rem;
+  }
+
+  .project-detail-layout {
+    grid-template-columns: 1fr;
+    gap: 1rem;
   }
 
   .site-nav-text {
