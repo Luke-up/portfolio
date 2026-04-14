@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 //left side navigation used on all pages
 function Navigation(props) {
@@ -20,9 +21,11 @@ function Navigation(props) {
           return (
             <Link key={link.key} href={link.href}>
               <a className={`site-nav-link ${activeClass}`}>
-                <img
+                <Image
                   src={link.icon}
                   alt={`${link.label} icon`}
+                  width={48}
+                  height={48}
                   className="site-nav-icon"
                 />
                 <span className="site-nav-text">{link.label}</span>

@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 //function renders a small card on the about.js page
 function AboutCard(props) {
   return (
@@ -11,10 +13,12 @@ function AboutCard(props) {
       >
         <h2 className="mb-2 text-capitalize">{props.section}</h2>
         <div className="w-50 mx-auto">
-          <img
+          <Image
             className="aboutmenu-icon"
             src={props.img}
             alt={`${props.section} section icon`}
+            width={100}
+            height={100}
           />
         </div>
       </button>
