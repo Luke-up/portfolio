@@ -21,13 +21,15 @@ function Navigation(props) {
           return (
             <Link key={link.key} href={link.href}>
               <a className={`site-nav-link ${activeClass}`}>
-                <Image
-                  src={link.icon}
-                  alt={`${link.label} icon`}
-                  width={48}
-                  height={48}
-                  className="site-nav-icon"
-                />
+                <span className="site-nav-icon-wrap">
+                  <Image
+                    src={link.icon}
+                    alt={`${link.label} icon`}
+                    layout="fill"
+                    objectFit="cover"
+                    className="site-nav-icon"
+                  />
+                </span>
                 <span className="site-nav-text">{link.label}</span>
               </a>
             </Link>
