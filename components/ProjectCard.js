@@ -1,22 +1,21 @@
-//renders a single project on the projects page
+import Link from "next/link";
+
+//renders a project tile with overlay text
 function ProjectCard(props) {
+  const { title, cardSummary, img, slug, tagline } = props.data;
+
   return (
-    <div className="col-6">
-      <div className="card w-75 mx-auto my-3 p-3 border-white">
-        <h2>{props.data.title}</h2>
-        <p>
-          {props.data.description}
-          <br />
-          <span>
-            <a href={props.data.codeLink} target="_">
-              code
-            </a>
-          </span>
-        </p>
-        <a href={props.data.appLink} target="_">
-          <img className="app-pictures w-100" src={props.data.img} />
+    <div className="col-12 col-md-6">
+      <Link href={`/projects/${slug}`}>
+        <a className="project-tile" aria-label={`Open ${title} project details`}>
+          <img className="project-tile-image" src={img} alt={`${title} preview`} />
+          <div className="project-tile-overlay">
+            <p className="project-meta mb-1">{tagline}</p>
+            <h2 className="mb-2">{title}</h2>
+            <p className="mb-0">{cardSummary}</p>
+          </div>
         </a>
-      </div>
+      </Link>
     </div>
   );
 }

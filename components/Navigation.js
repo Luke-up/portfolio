@@ -1,76 +1,38 @@
 import Link from "next/link";
-import ProjectsSVG from "./ProjectsSVG";
-import AboutSVG from "./AboutSVG";
-import HomeSVG from "./HomeSVG";
 
-//navigation bar with links to home, about and project list page
-//navbar is always at the top of each page
+//left side navigation used on all pages
 function Navigation(props) {
-  if (props.type === "home") {
-    return (
-      <div className="container-fluid p-3 sticky-top">
-        <div className="row my-5">
-          <div className="col">
-            <Link href="/projects">
-              <a className="float-start nav-link ms-5">
-                <ProjectsSVG />
+  const links = [
+    { key: "home", label: "Home", href: "/", icon: "/images/education.png" },
+    { key: "about", label: "About", href: "/about", icon: "/images/profile.png" },
+    { key: "projects", label: "Projects", href: "/projects", icon: "/images/work.png" },
+  ];
+
+  return (
+    <aside className="site-sidebar">
+      <p className="font-hand fs-4 mb-4 site-sidebar-title">
+        <span className="site-sidebar-title-short">LP</span>
+        <span className="site-sidebar-title-full">Luke Paine</span>
+      </p>
+      <nav aria-label="Primary site navigation">
+        {links.map((link) => {
+          const activeClass = props.type === link.key ? "site-nav-active" : "";
+          return (
+            <Link key={link.key} href={link.href}>
+              <a className={`site-nav-link ${activeClass}`}>
+                <img
+                  src={link.icon}
+                  alt={`${link.label} icon`}
+                  className="site-nav-icon"
+                />
+                <span className="site-nav-text">{link.label}</span>
               </a>
             </Link>
-          </div>
-          <div className="col">
-            <Link href="/about">
-              <a className="float-end nav-link me-5">
-                <AboutSVG />
-              </a>
-            </Link>
-          </div>
-        </div>
-      </div>
-    );
-  }
-  if (props.type === "projects") {
-    return (
-      <div className="container-fluid p-3 sticky-top">
-        <div className="row my-5">
-          <div className="col">
-            <Link href="/">
-              <a className="float-start nav-link ms-5">
-                <HomeSVG />
-              </a>
-            </Link>
-          </div>
-          <div className="col">
-            <Link href="/about">
-              <a className="float-end nav-link me-5">
-                <AboutSVG />
-              </a>
-            </Link>
-          </div>
-        </div>
-      </div>
-    );
-  } else {
-    return (
-      <div className="container-fluid p-3 sticky-top">
-        <div className="row my-5">
-          <div className="col">
-            <Link href="/">
-              <a className="float-start nav-link ms-5">
-                <HomeSVG />
-              </a>
-            </Link>
-          </div>
-          <div className="col">
-            <Link href="/projects">
-              <a className="float-end nav-link me-5">
-                <ProjectsSVG />
-              </a>
-            </Link>
-          </div>
-        </div>
-      </div>
-    );
-  }
+          );
+        })}
+      </nav>
+    </aside>
+  );
 }
 
 export default Navigation;
