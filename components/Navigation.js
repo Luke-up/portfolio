@@ -15,7 +15,7 @@ function Navigation(props) {
         <span className="site-sidebar-title-short">LP</span>
         <span className="site-sidebar-title-full">Luke Paine</span>
       </p>
-      <nav aria-label="Primary site navigation">
+      <nav className="site-nav" aria-label="Primary site navigation">
         {links.map((link) => {
           const activeClass = props.type === link.key ? "site-nav-active" : "";
           return (

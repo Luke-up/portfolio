@@ -393,12 +393,49 @@ height: 80vh;
     border-right: 0;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     padding: 1rem;
+    /* Avoid width animating when :focus-within matched desktop expand rules */
+    transition: none;
+  }
+
+  /* Same specificity as desktop hover/focus rules; keep full-width header on tap */
+  .site-sidebar:hover,
+  .site-sidebar:focus-within {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .site-nav {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.35rem;
+  }
+
+  .site-nav-icon-wrap {
+    display: none;
   }
 
   .site-nav-link {
-    display: inline-flex;
-    margin-right: 1rem;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    min-height: auto;
     margin-bottom: 0;
+    margin-right: 0;
+    gap: 0;
+  }
+
+  .site-nav-link:nth-child(1) {
+    justify-content: flex-start;
+  }
+
+  .site-nav-link:nth-child(2) {
+    justify-content: center;
+  }
+
+  .site-nav-link:nth-child(3) {
+    justify-content: flex-end;
   }
 
   .page-content {
@@ -427,5 +464,11 @@ height: 80vh;
   .site-sidebar-title-full {
     position: static;
     opacity: 1;
+  }
+
+  /* Fit title + contact footer in one viewport below the stacked header + main padding */
+  .home-screen {
+    min-height: calc(100vh - 13rem);
+    min-height: calc(100dvh - 13rem);
   }
 }
